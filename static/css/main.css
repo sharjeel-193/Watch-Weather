@@ -1,0 +1,82 @@
+body{
+    background:linear-gradient(45deg, #e6e6e6, #d9d9d9);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0;
+    height: 100vh;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, #8000ff, #8c1aff);
+    
+}
+.header h1{
+    color: white;
+    font-weight: 150;
+    letter-spacing: -4px;
+    font-size: 60px;
+}
+input#city{
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media only screen and (max-width: 640px){
+    .header h1{
+        font-size: 48px;
+    }
+}
+.weather-data h1{
+    font-size: 72px;
+    text-align: center;
+}
+.weather-data h3{
+    text-align: right;
+}
+.weather-icon{
+    width: 30%;
+    margin-right: 5px;
+}
+.weather-characteristics{
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+.weather-characteristics:hover{
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(45deg, #8000ff, #8c1aff);
+    transform: scale(1.2);
+    color: white;
+    z-index: 100;
+}
+.weather-img{
+    width: 100%;
+    text-align: right;
+}
+@media only screen and (max-width: 768px){
+    .weather-img{
+        text-align: center;
+    }
+}
+.api-name{
+    color: darkgray;
+    text-align: center;
+}
+.api-name>div>img{
+    max-width: 300px;
+    margin: 10px auto;
+}
+.footer{
+    background: linear-gradient(45deg, #8000ff, #8c1aff);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
