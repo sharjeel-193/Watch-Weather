@@ -44,7 +44,7 @@ def weather_dashboard():
             iconUrl = 'https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloud-256.png'
         elif data['weather'][0]['description']=='broken clouds':
             iconUrl = 'https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloud-256.png'
-        elif data['weather'][0]['description']=='mist':
+        elif data['weather'][0]['description']=='mist' or data['weather'][0]['description']=='smoke':
             iconUrl = 'https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_30-256.png'
         elif data['weather'][0]['description']=='thunderstorm':
             iconUrl = 'https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/flash-cloud-256.png'
@@ -68,3 +68,7 @@ def render_results():
 if  __name__ == '__main__':
     app.run()
 
+
+
+
+ 
